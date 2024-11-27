@@ -1,0 +1,623 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    background: url(img/velomen.png);
+    padding: 20px 200px;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav > div div{
+    display: flex;
+    gap: 20px;
+}
+
+
+nav p,i{
+    cursor: pointer;
+
+}
+nav p:hover, i:hover{
+    color: orange;
+}
+
+header > div{
+    margin: 100px 0 0;
+}
+
+header > div h1{
+    font-size: 80px;
+    line-height: 70px;
+}
+
+header > div p{
+    opacity: 60%;
+    font-size: 20px;
+}
+
+header > div button{
+    padding: 10px 30px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0 0;
+    transition: 200ms;
+}
+
+header > div button:hover{
+    padding: 15px 35px;
+    margin-top: 10px 0 0;
+}
+
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 40vh;
+}
+
+.box div{
+    background-color: black;
+    height: 200px;
+    cursor: pointer;
+    transition: 200ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box > :nth-child(1){
+    padding: 20px 100px 20px 230px;
+}
+
+.box > :nth-child(2){
+    padding: 20px 100px 20px 20px;
+}
+
+.box > :nth-child(3){
+    padding: 20px 240px 20px 100px;
+}
+
+.box span{
+    display: none;
+    color: orange;
+}
+
+.box p{
+    font-size: 25px;
+}
+
+.box div:hover span{
+    display: block;
+}
+
+.box > :nth-child(1):hover{
+    padding: 50px 100px 80px 230px;
+    margin-top: -50px;
+    border-radius: 0 20px 20px 0;
+}
+
+.box > :nth-child(2):hover{
+    padding: 50px 100px 80px 20px;
+    margin-top: -50px;
+    border-radius: 20px;
+}
+
+.box > :nth-child(3):hover{
+    padding: 50px 240px 80px 100px;
+    margin-top: -50px;
+    border-radius: 20px 0 0 20px;
+}
+
+.reklama{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reklama img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.velo{
+    padding: 50px 200px 70px 200px;
+    background: #F8F8F8;
+    height: 90vh;
+}
+
+.velo h1{
+    font-size: 40px;
+}
+
+.velo > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.velo > div div{
+    background-color: white;
+    border-radius: 10px;
+    transition: 200ms;
+    padding: 10px ;
+}
+
+.velo button{
+    opacity: 0;
+    width: 100%;
+    height: 0px;
+    background-color: orange;
+    color: white;
+    font-size: 0px;
+    border-radius: 10px;
+    border: 0;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.velo > div div:hover button{
+    height: 50px;
+    font-size: 15px;
+    opacity: 100%;
+}
+
+.velo > div div div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.velos{
+    width: 300px;
+}
+
+.stran{
+    width: 70px;
+    border-radius: 5px 0 0 0;
+}
+
+.velo b{
+    color: orange;
+    margin-right: 10px;
+}
+
+.velo p{
+    opacity: 70%;
+}
+
+.velo h2{
+    font-size: 17px;
+    opacity: 70%;
+}
+
+.velo span{
+    display: block;
+    padding: 20px;
+}
+
+.rek{
+    padding: 100px 200px;
+}
+
+.rek h2{
+    font-size: 40px;
+}
+
+.rek > :nth-child(2){
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 30px;
+}
+
+.rek > :nth-child(2) h1{
+    font-size: 40px;
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+.box2 div{
+    border-radius: 10px;
+}
+
+.box2 > div div{
+    background-color: black;
+}
+
+.box2 > :nth-child(1){
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.box2 > :nth-child(1) h1{
+    font-size: 80px;
+}
+
+.box2 > :nth-child(2) :nth-child(1){
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 40px 0 0 10px;
+    font-size: 70px;   
+}
+
+.box2 > :nth-child(2) :nth-child(1) img{
+    width: 100px;
+}
+
+.box2 :nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.box2 > :nth-child(2) :nth-child(2){
+    padding: 0 0 1px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box2 > :nth-child(2) :nth-child(2) img{
+    width: 350px;
+    padding: 0;
+}
+
+.box2 h1{
+    padding: 0;
+    margin-top: -50px;
+    font-size: 40px;
+}
+
+.box2 > :nth-child(3){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.box2 > :nth-child(3) :nth-child(1){
+    font-size: 45px;
+    width: 270px;
+    padding: 0 0 0 10px;
+}
+
+.box2 > :nth-child(3) :nth-child(1){
+    margin-top: 30px;
+}
+
+.box2 > :nth-child(3) :nth-child(1) img{
+    width: 200px;
+    margin-left: 60px;
+    margin-top: -30px;
+}
+
+.box2 > :nth-child(3) :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 0 10px;
+    align-items: center;
+}
+
+.box2 :nth-child(3) :nth-child(2) img{
+    margin-left: -140px;
+    width: 120px;
+    height: 120px;
+}
+
+.text{
+    display: flex;
+    padding: 100px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h1{
+    font-size: 50px;
+}
+
+.text p{
+    font-weight: 100;
+}
+
+.text b{
+    display: block;
+    margin-top: 30px;
+    color: grey;
+}
+
+.naezd{
+    padding-top: 600px;
+    background: url(img/еульзябыло\ раньше.png);
+}
+
+.flex{
+    display: flex;
+    background: #2E2E2E;
+    justify-content: space-between;
+    padding: 20px 200px;
+}
+
+.flex div div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex h2{
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.flex p{
+    color: white;
+    opacity: 50%;
+    font-size: 17px;
+}
+
+.nelo{
+    position: relative;
+    background: #252525;
+    margin: 0;
+    padding: 50px 0 50px 200px;
+    z-index: -2;
+}
+
+.nelo > h1{
+    color: white;
+}
+
+.nelo > div{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.ab{
+    position: absolute;
+    z-index: -1;
+}
+
+.lol{
+    bottom: 0;
+    left: 0;
+}
+.dobil{
+    right: 0;
+    top: 50px;
+}
+
+.dor{
+    padding: 50px 200px;
+}
+
+.dor h1{
+    font-size: 50px;
+}
+
+.df{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aaa{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.aaa div{
+    background: #34312D;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.aaa span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aaa p{
+    opacity: 70%;
+}
+
+.d img{
+    width: 400px;
+}
+
+.d button{
+    margin-top: 30px;
+    padding: 10px 40px;
+    color: white;
+    background-color: orange;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.s{
+    padding: 50px 0;
+}
+
+.s img{
+    height: 450px;
+}
+
+.s h1{
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+.ex{
+    display: flex;
+    gap: 65px;
+}
+
+.blok{
+    display: flex;
+    gap: 20px;
+}
+
+.blok div{
+    background-color: orange;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.demonstratsiya{
+    display: flex;
+    gap: 50px;
+}
+
+.demonstratsiya img{
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+
+.demonstratsiya div{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.demonstratsiya span{
+    display: block;
+    padding: 10px;
+}
+
+.demonstratsiya button{
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.demonstratsiya b{
+    color: orange;
+}
+
+.map > img{
+    width: 100%;
+}
+
+.map > div{
+    display: flex;
+    padding: 10px 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map > div div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.potfooter{
+    position: relative;
+    padding: 20px 200px;
+    background: #131313;
+    color: white;
+    background: url(img/footerimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.potfooter h1{
+    font-size: 60px;
+    color: white;
+
+}
+.potfooter div{
+    display: flex;
+    gap: 10px;
+}
+
+.potfooter > :nth-child(2) input{
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.potfooter button{
+    padding: 10px 40px;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+/* .potfooter img{
+    position: absolute;
+    right: 10px;
+    top: 0; 
+} */
+
+footer{
+    background-color: black;
+    padding: 100px 200px 10px 200px;
+}
+
+footer p,b{
+    color: darkgray;
+    cursor: pointer;
+}
+
+footer h1{
+    color: white;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p:hover{
+    color: orange;
+}
+
+footer span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
